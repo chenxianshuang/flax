@@ -9,7 +9,7 @@ use Icecave\Collections\Map;
 use Icecave\Collections\SequenceInterface;
 use Icecave\Flax\Binary;
 use Icecave\Flax\Exception\EncodeException;
-use Icecave\Flax\Object;
+use Icecave\Flax\BaseObject;
 use stdClass;
 
 class Encoder
