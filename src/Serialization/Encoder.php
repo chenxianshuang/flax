@@ -324,7 +324,7 @@ class Encoder
             return $this->encodeBinary($value->data());
         }
 
-        if ($value instanceof Object) {
+        if ($value instanceof BaseObject) {
             $className = $value->className();
             $value = $value->object();
         } else {

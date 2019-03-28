@@ -70,12 +70,12 @@ class HessianClientIntegrationTest extends PHPUnit_Framework_TestCase
             $this->markTestSkipped();
         }
 
-        if ($output instanceof Object) {
+        if ($output instanceof BaseObject) {
             $output = $output->object();
         } elseif ($output instanceof Vector) {
             $output->mapInPlace(
                 function ($element) {
-                    if ($element instanceof Object) {
+                    if ($element instanceof BaseObject) {
                         return $element->object();
                     }
 
